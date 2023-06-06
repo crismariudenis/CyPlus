@@ -1,0 +1,14 @@
+<div class="sidebar" [class.closed]="isClosed$ | async">
+    <ul class="menu">
+        <li
+            class="menu__item hoverable"
+            [routerLink]="item.url"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="active"
+            *ngFor="let item of menu">
+                <img class="menu__item-img" [src]="item.iconUrl" />
+                <span>{{ item.name }}</span>
+        </li>
+    </ul>
+    <span class="copyright">©CyLiis 2022 |<br> All rights Reserved</span>
+</div>

@@ -1,0 +1,16 @@
+.text {
+    font-size: 1.2rem;
+    line-height: 2;
+    padding: 1rem 0;
+    @media only screen and (max-width : 768px) {
+        font-size: 1rem;
+        padding: 0;
+    }
+}
+
+.divider {
+    margin-bottom: 3rem;
+    @media only screen and (max-width : 768px) {
+        margin-bottom: 1rem;
+    }
+}

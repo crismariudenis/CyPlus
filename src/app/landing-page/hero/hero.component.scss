@@ -1,0 +1,17 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    &__title {
+        font-size: 8rem;
+        line-height: normal;
+        @media only screen and (max-width : 768px) {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.mark {
+    background: linear-gradient(30deg, #32a3ff, #2266cb);
+    background-clip: text;
+    color: transparent;
+}
