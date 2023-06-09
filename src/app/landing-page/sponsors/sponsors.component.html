@@ -3,33 +3,15 @@
   <section class="diamond">
     <h2>Diamond</h2>
     <div class="content">
-      <a class="sponsor" [href]="sponsor.url" target="_blank" *ngFor="let sponsor of diamond">
-        <img [src]="sponsor.imageUrl" />
-      </a>
-    </div>
-  </section>
-  <section class="platinum">
-    <h2>Platinum</h2>
-    <div class="content">
-      <a class="sponsor" [href]="sponsor.url" target="_blank" *ngFor="let sponsor of platinum">
-        <img [src]="sponsor.imageUrl" />
-      </a>
-    </div>
-  </section>
-  <section class="gold">
-    <h2>Gold</h2>
-    <div class="content">
-      <a class="sponsor" [href]="sponsor.url" target="_blank" *ngFor="let sponsor of gold">
-        <img [src]="sponsor.imageUrl" />
+      <a class="sponsor" target="_blank" *ngFor="let sponsor of diamond">
+        <img [src]="sponsor" />
       </a>
     </div>
   </section>
   <section class="standard">
     <h2>Standard</h2>
     <div class="content">
-      <a class="sponsor" [href]="sponsor.url" target="_blank" *ngFor="let sponsor of standard">
-        <img [src]="sponsor.imageUrl" />
-      </a>
+      <img [src]="sponsor" class="sponsor" *ngFor="let sponsor of standard"/>
     </div>
   </section>
 </div>

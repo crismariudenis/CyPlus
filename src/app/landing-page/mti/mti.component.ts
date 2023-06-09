@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class MtiComponent {
 
-  imageUrl = "https://www.nwf.org/-/media/NEW-WEBSITE/Shared-Folder/Wildlife/Mammals/mammal_raccoon-wisconsin_mary-braatz_600x300.ashx"
+  imageUrl = "/assets/events/MTI.png"
 }

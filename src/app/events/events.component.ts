@@ -80,7 +80,7 @@ export class EventsComponent {
     {
       name: "CySchool",
       date: "Data primului episod: 04.12.2022",
-      imageUrl: "/assets/events/ReCyLiis.png",
+      imageUrl: "/assets/events/CySchool.jpg",
       url: ""
     },
     {
@@ -98,7 +98,7 @@ export class EventsComponent {
     {
       name: "Colinda Roboticii",
       date: "24.12.2022",
-      imageUrl: "/assets/events/ReCyLiis.png",
+      imageUrl: "/assets/events/Colinda Roboticii.png",
       url: ""
     },
     {
@@ -110,13 +110,13 @@ export class EventsComponent {
     {
       name: "Regionala #1 FTC Romania PowerPlay",
       date: "13-15.02.2023",
-      imageUrl: "/assets/events/ReCyLiis.png",
+      imageUrl: "/assets/events/Regionala.jpg",
       url: ""
     },
     {
       name: "Maryland Tech Invitational",
       date: "23-25.06.2023",
-      imageUrl: "/assets/events/ReCyLiis.png",
+      imageUrl: "/assets/events/MTI.png",
       url: ""
     }
   ];
