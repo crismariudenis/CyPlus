@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { LocalStorageService } from './local-storage.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SidebarService {
 
-  constructor() { }
+  constructor(private localStorageService: LocalStorageService) {
+    console.log(this.localStorageService.getItem("isClosed"))
+  }
 
-  private isClosed = new BehaviorSubject<boolean>(false);
+  private isClosed = new BehaviorSubject<boolean>(
+    this.localStorageService.getItem("isClosed") === 'true'
+  );
 
   menu: any = [
     {
@@ -26,6 +31,11 @@ export class SidebarService {
       iconUrl: "/assets/icons/portfolio.webp",
       url: "/members"
     },
+    // {
+    //   name: "News",
+    //   iconUrl: "/assets/icons/info.webp",
+    //   url: "/news"
+    // },
   ]
 
   getIsClosed() {
@@ -34,6 +44,7 @@ export class SidebarService {
 
   toggle() {
     this.isClosed.next(!this.isClosed.value);
+    this.localStorageService.setItem("isClosed", this.isClosed.value.toString());
   }
-        
+
 }

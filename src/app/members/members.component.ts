@@ -27,7 +27,7 @@ export class MembersComponent {
     },
     {
       name: "Jitaru Andrei-Vlad",
-      imageUrl: "/assets/members/Andrei J.webp",
+      imageUrl: "/assets/members/Andrei Jitaru.webp",
       quote: "“Make your wonderful dream a reality, and it will become your truth.” — N, Pokemon",
       instagram: "https://www.instagram.com/andrei_vlad.jitaru/",
       facebook: "https://www.facebook.com/andrei.vlad.jitariu"
@@ -48,14 +48,14 @@ export class MembersComponent {
     },
     {
       name: "Enăchescu Alexandra-Maria",
-      imageUrl: "/assets/members/test.png",
+      imageUrl: "/assets/members/Alexandra.webp",
       quote: "“In the midst of chaos, there is also opportunity” - Sun-Tzu ",
       instagram: "https://instagram.com/alexandra_enachescu?igshid=MzNlNGNkZWQ4Mg==",
       facebook: "https://www.facebook.com/alexandramaria.enachescu"
     },
     {
       name: "Alin-Gabriel Motricală",
-      imageUrl: "/assets/members/Alin M.webp",
+      imageUrl: "/assets/members/Alin.webp",
       quote: "What we know is a drop. What we do not know… is an ocean"
     },
     {
@@ -64,7 +64,7 @@ export class MembersComponent {
     },
     {
       name: "Amalia Țîlică",
-      imageUrl: "/assets/members/Amalia T.webp",
+      imageUrl: "/assets/members/Amalia Tilica.webp",
       quote: "There's no way I have a screw loose, because they all fell out (and then I used zipties).",
       instagram: "https://www.instagram.com/espurr.23/"
     },
@@ -159,7 +159,7 @@ export class MembersComponent {
     },
     {
       name: "Alexandru Radu",
-      imageUrl: "/assets/members/David Hincu.webp",
+      imageUrl: "/assets/members/alexandru-radu.webp",
       quote: "Born to be a SolidWorker",
       instagram: "https://www.instagram.com/alexandru230/",
       github: "https://github.com/alexradu04"
@@ -174,7 +174,7 @@ export class MembersComponent {
     },
     {
       name: "Balasescu Andrei",
-      imageUrl: "/assets/members/David Hincu.webp",
+      imageUrl: "/assets/members/balasescu-andrei.webp",
       quote: "We win these",
       instagram: "https://www.instagram.com/bala_andrei9/"
     }

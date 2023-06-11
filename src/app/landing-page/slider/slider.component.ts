@@ -10,12 +10,12 @@ import { BehaviorSubject, Observable, Subscription, interval, map } from 'rxjs';
 export class SliderComponent implements OnInit{
 
   slider : string[] = [
-    'assets/slider/1.jpg',
-    'assets/slider/2.jpg',
-    'assets/slider/3.jpg',
-    'assets/slider/4.jpg',
-    'assets/slider/5.jpg',
-    'assets/slider/6.jpg',
+    'assets/slider/1.webp',
+    'assets/slider/2.webp',
+    'assets/slider/3.webp',
+    'assets/slider/4.webp',
+    'assets/slider/5.webp',
+    'assets/slider/6.webp',
   ]
 
   imageIndex$ : BehaviorSubject<number> = new BehaviorSubject<number>(0);
@@ -37,7 +37,7 @@ export class SliderComponent implements OnInit{
     this.next()
     this.setInterval()
   }
-    
+
   onPrevious() {
     this.imageIndex$.next(!this.imageIndex$.value ? this.slider.length - 1 : this.imageIndex$.value - 1)
     this.setInterval()

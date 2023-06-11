@@ -29,8 +29,9 @@ html, body {
 
 .divider {
   width: 100%;
-  height: 2px;
-  background-color: var(--text-color);
+  height: 7px;
+  border-radius: 50vmax;
+  background-color: var(--surface-color);
 }
 
 ::-webkit-scrollbar-track {

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class MtiComponent {
 
-  imageUrl = "/assets/events/MTI.png"
+  imageUrl = "/assets/events/MTI.webp"
 }

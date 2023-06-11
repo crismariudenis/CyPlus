@@ -11,7 +11,9 @@
   <section class="standard">
     <h2>Standard</h2>
     <div class="content">
-      <img [src]="sponsor" class="sponsor" *ngFor="let sponsor of standard"/>
+      <a class="sponsor" target="_blank" *ngFor="let sponsor of standard">
+        <img [src]="sponsor" />
+      </a>
     </div>
   </section>
 </div>
