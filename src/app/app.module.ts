@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { SidebarComponent } from './core/sidebar/sidebar.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { SponsorsComponent } from './core/sponsors/sponsors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
+    SponsorsComponent
   ],
   imports: [
     FooterComponent,

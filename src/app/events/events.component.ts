@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class EventsComponent {
 
-  // events = [
-
-  // ]
   events = [
     {
       name: "Maryland Tech Invitational",

@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin: 2rem 0;
+    margin-top: 2rem;
     @media only screen and (max-width : 768px) {
-        margin: 1rem 0;
+        margin: 1rem 0 2rem;
         grid-area: .5rem;
         grid-template-columns: 1fr;
     }
