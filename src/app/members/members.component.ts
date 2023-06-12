@@ -9,6 +9,21 @@ import { member } from './member';
 export class MembersComponent {
   team: Array<member> = [
     {
+      name: 'Puricoi Constantin-Cătălin',
+      imageUrl: '/assets/members/David Hincu.webp',
+      quote: `"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill`,
+      instagram: 'https://www.instagram.com/catalinpuricoi/',
+      facebook: 'https://www.facebook.com/catalin.puricoi',
+      github: 'https://github.com/catalinpuricoi15',
+    },
+    {
+      name: 'Alexandru Radu',
+      imageUrl: '/assets/members/alexandru-radu.webp',
+      quote: 'Born to be a SolidWorker',
+      instagram: 'https://www.instagram.com/alexandru230/',
+      github: 'https://github.com/alexradu04',
+    },
+    {
       name: 'Buruiana Ștefan',
       imageUrl: '/assets/members/Buruiana Stefan.webp',
       quote: 'But it would be funny',
@@ -17,7 +32,7 @@ export class MembersComponent {
     {
       name: 'Denis Crismariu',
       imageUrl: '/assets/members/Denis Crismariu.webp',
-      quote: 'L',
+      quote: 'I don\'t touch grass, I touch robots',
       instagram: 'https://www.instagram.com/crismariudenis/',
       facebook: 'https://www.facebook.com/crismariu.denis',
       github: 'https://github.com/crismariudenis',
@@ -145,21 +160,7 @@ export class MembersComponent {
       instagram: 'https://instagram.com/emmy43262?igshid=NGExMmI2YTkyZg==',
       github: 'https://github.com/Emmy43262',
     },
-    {
-      name: 'Alexandru Radu',
-      imageUrl: '/assets/members/alexandru-radu.webp',
-      quote: 'Born to be a SolidWorker',
-      instagram: 'https://www.instagram.com/alexandru230/',
-      github: 'https://github.com/alexradu04',
-    },
-    {
-      name: 'Puricoi Constantin-Cătălin',
-      imageUrl: '/assets/members/David Hincu.webp',
-      quote: `"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill`,
-      instagram: 'https://www.instagram.com/catalinpuricoi/',
-      facebook: 'https://www.facebook.com/catalin.puricoi',
-      github: 'https://github.com/catalinpuricoi15',
-    },
+
     {
       name: 'Balasescu Andrei',
       imageUrl: '/assets/members/balasescu-andrei.webp',
