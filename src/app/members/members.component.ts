@@ -32,7 +32,7 @@ export class MembersComponent {
     {
       name: 'Denis Crismariu',
       imageUrl: '/assets/members/Denis Crismariu.webp',
-      quote: 'I don\'t touch grass, I touch robots',
+      quote: "I don't touch grass, I touch robots",
       instagram: 'https://www.instagram.com/crismariudenis/',
       facebook: 'https://www.facebook.com/crismariu.denis',
       github: 'https://github.com/crismariudenis',
@@ -40,7 +40,7 @@ export class MembersComponent {
     {
       name: 'Sebastian Tănase',
       imageUrl: '/assets/members/Sebastian Tanase.webp',
-      quote: 'W',
+      quote: 'Simple is better',
       instagram: 'https://www.instagram.com/sebastian.f3d/',
     },
     {
