@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 export class SponsorsComponent {
 
   diamond : any = [
-    'assets/sponsors/diamond/Antibiotice.png',
-    'assets/sponsors/diamond/Asociatia Umanitara Tester Grup.png',
-    'assets/sponsors/diamond/Deus.png',
-    'assets/sponsors/diamond/Heaven Solutions.png',
-    'assets/sponsors/diamond/Trans AnaPet.png',
-    'assets/sponsors/diamond/WinMentor Logo.png',
+    'assets/sponsors/diamond/Antibiotice.webp',
+    'assets/sponsors/diamond/Asociatia Umanitara Tester Grup.webp',
+    'assets/sponsors/diamond/Deus.webp',
+    'assets/sponsors/diamond/Heaven Solutions.webp',
+    'assets/sponsors/diamond/Trans AnaPet.webp',
+    'assets/sponsors/diamond/WinMentor Logo.webp',
   ]
 
   platinum : any = []
@@ -21,6 +21,6 @@ export class SponsorsComponent {
   gold : any = []
 
   standard : any = [
-    'assets/sponsors/standard/AviTop.png',
+    'assets/sponsors/standard/AviTop.webp',
   ]
 }

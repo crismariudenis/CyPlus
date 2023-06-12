@@ -24,7 +24,7 @@ export class EventsComponent {
       name: "Weekend-ul de Mentorare STEM",
       date: "28-29.01.2023",
       imageUrl: "/assets/events/Weekend-ul-de-mentorare-STEM.webp",
-      link: ""
+      link: "https://www.instagram.com/reel/CoCrFHQNxL3/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "Colinda Roboticii",
@@ -36,13 +36,13 @@ export class EventsComponent {
       name: "DeCyPher",
       date: "20.12.2022",
       imageUrl: "/assets/events/Decypher.webp",
-      link: ""
+      link: "https://www.instagram.com/p/CmHXtyusp-K/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "Photoshop Battles",
       date: "10-14.12.2022",
       imageUrl: "/assets/events/Photoshop Battles.webp",
-      link: ""
+      link: "https://www.instagram.com/p/CligC-UMrra/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "CySchool",
@@ -54,7 +54,7 @@ export class EventsComponent {
       name: "ReCyLiis",
       date: "18-20.11.2022",
       imageUrl: "/assets/events/ReCyLiis.webp",
-      link: ""
+      link: "https://www.instagram.com/p/ClD44YKMbBr/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "Quantum League Iasi Edition",
@@ -66,13 +66,13 @@ export class EventsComponent {
       name: "Cylloween Second Edition",
       date: "28-30.10.2022",
       imageUrl: "/assets/events/Cylloween.webp",
-      link: ""
+      link: "https://www.instagram.com/p/Cjz6EZCM7s2/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "CyQuiz",
       date: "08.10.2022",
       imageUrl: "/assets/events/CyQuiz.webp",
-      link: ""
+      link: "https://www.instagram.com/p/CjS10aEj7s0/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "Kick-Off FTC",
@@ -84,37 +84,37 @@ export class EventsComponent {
       name: "House of CyLiis",
       date: "27.08-04.09.2022",
       imageUrl: "/assets/events/House of CyLiis 2022.webp",
-      link: ""
+      link: "https://www.instagram.com/p/Cg_nzOloBEV/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "Interviuri",
       date: "summer 2022",
       imageUrl: "/assets/events/6.webp",
-      link: ""
+      link: "https://www.instagram.com/p/CejHTvMIM7g/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "CyJam",
       date: "05-10.03.2022",
       imageUrl: "/assets/events/CyJam.webp",
-      link: ""
+      link: "https://www.instagram.com/p/CacofISII7_/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "Christmas Hunt",
       date: "04.12.2021",
       imageUrl: "/assets/events/3.webp",
-      link: ""
+      link: "https://www.instagram.com/p/CWwBDZdoKxW/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "Cylloween Trick or Print",
       date: "29-31.10.2021",
       imageUrl: "/assets/events/2.webp",
-      link: ""
+      link: "https://www.instagram.com/p/CVfQ6HLBgsX/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     },
     {
       name: "House of Cyliis",
       date: "29.08-05.09.2021",
       imageUrl: "/assets/events/1.webp",
-      link: ""
+      link: "https://www.instagram.com/p/CSZCzkuonf8/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA== "
     }
   ]
 
