@@ -4,5 +4,6 @@ export interface member {
   quote?: string,
   instagram?: string,
   facebook?: string,
-  github?: string
+  github?: string,
+  mentor?: boolean,
 }
