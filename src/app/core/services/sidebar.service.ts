@@ -7,9 +7,7 @@ import { LocalStorageService } from './local-storage.service';
 })
 export class SidebarService {
 
-  constructor(private localStorageService: LocalStorageService) {
-    console.log(this.localStorageService.getItem("isClosed"))
-  }
+  constructor(private localStorageService: LocalStorageService) { }
 
   private isClosed = new BehaviorSubject<boolean>(
     this.localStorageService.getItem("isClosed") === 'true'
