@@ -22,5 +22,7 @@ export class SponsorsComponent {
 
   standard : any = [
     'assets/sponsors/standard/AviTop.webp',
+    'assets/sponsors/standard/meg.webp',
+    'assets/sponsors/standard/pro.webp',
   ]
 }

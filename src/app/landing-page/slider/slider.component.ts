@@ -11,7 +11,6 @@ export class SliderComponent implements OnInit{
 
   slider : string[] = [
     'assets/slider/1.webp',
-    'assets/slider/2.webp',
     'assets/slider/3.webp',
     'assets/slider/4.webp',
     'assets/slider/5.webp',
