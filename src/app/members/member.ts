@@ -6,4 +6,5 @@ export interface member {
   facebook?: string,
   github?: string,
   mentor?: boolean,
+  teamLeader?: boolean
 }

@@ -11,7 +11,7 @@ export class MembersComponent {
   team: Array<member> = [
     {
       name: "Puricoi Constantin-Cătălin",
-      imageUrl: "/assets/members/David Hincu.webp",
+      imageUrl: "/assets/members/catalin.webp",
       quote: `"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill`,
       instagram: "https://www.instagram.com/catalinpuricoi/",
       facebook: "https://www.facebook.com/catalin.puricoi",
@@ -27,10 +27,12 @@ export class MembersComponent {
       mentor: true
     },
     {
-      name: "Buruiana Ștefan",
-      imageUrl: "/assets/members/Buruiana Stefan.webp",
-      quote: "But it would be funny",
-      github: "https://github.com/Titoxyk"
+      name: "Amalia Țîlică",
+      imageUrl: "/assets/members/Amalia Tilica.webp",
+      quote: "There's no way I have a screw loose, because they all fell out (and then I used zipties).",
+      instagram: "https://www.instagram.com/espurr.23/",
+      facebook: 'https://www.facebook.com/amaliatilica',
+      mentor: true
     },
     {
       name: "Denis Crismariu",
@@ -42,10 +44,9 @@ export class MembersComponent {
       mentor: true
     },
     {
-      name: "Sebastian Tănase",
-      imageUrl: "/assets/members/Sebastian Tanase.webp",
-      quote: "W",
-      instagram: "https://www.instagram.com/sebastian.f3d/"
+      name: "Mirela Țibu",
+      imageUrl: "/assets/members/Mirela Tibu.webp",
+      mentor: true
     },
     {
       name: "Victor Tcaciuc",
@@ -53,7 +54,8 @@ export class MembersComponent {
       quote: "Can't find me? Try searching CyLiis labs:)",
       instagram: "https://www.instagram.com/victor1tcaciuc/",
       facebook: "https://www.facebook.com/victorgabrieltcaciuc/",
-      github: "https://github.com/StripierWig208"
+      github: "https://github.com/StripierWig208",
+      teamLeader: true
     },
     {
       name: "Anton Petru",
@@ -62,6 +64,19 @@ export class MembersComponent {
       instagram: 'https://www.instagram.com/adiutzuu/',
       facebook: 'https://www.facebook.com/Oglumaa',
       github: 'https://github.com/Adiutzu',
+      teamLeader: true
+    },
+    {
+      name: "Buruiana Ștefan",
+      imageUrl: "/assets/members/Buruiana Stefan.webp",
+      quote: "But it would be funny",
+      github: "https://github.com/Titoxyk"
+    },
+    {
+      name: "Sebastian Tănase",
+      imageUrl: "/assets/members/Sebastian Tanase.webp",
+      quote: "W",
+      instagram: "https://www.instagram.com/sebastian.f3d/"
     },
     {
       name: "Matei Galeș",
@@ -89,14 +104,7 @@ export class MembersComponent {
       instagram: "https://www.instagram.com/andrei_vlad.jitaru/",
       facebook: "https://www.facebook.com/andrei.vlad.jitariu"
     },
-    {
-      name: "Amalia Țîlică",
-      imageUrl: "/assets/members/Amalia Tilica.webp",
-      quote: "There's no way I have a screw loose, because they all fell out (and then I used zipties).",
-      instagram: "https://www.instagram.com/espurr.23/",
-      facebook: 'https://www.facebook.com/amaliatilica',
-      mentor: true
-    },
+
     {
       name: "Dimitrie Mihai",
       imageUrl: "/assets/members/Dimitrie Mihai.webp",

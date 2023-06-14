@@ -1,0 +1,17 @@
+.text-editor {
+    width: 100%;
+    outline: none;
+    padding: .8rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: var(--surface-color);
+    border-top: 1px solid var(--wash);
+    height: 400px;
+    overflow: auto;
+    border-radius: 0 0 1rem 1rem;
+    &:empty:before {
+        content: attr(placeholder);
+        color: var(--placeholder-color);
+    }
+}

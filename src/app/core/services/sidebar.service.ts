@@ -9,9 +9,7 @@ export class SidebarService {
 
   constructor(private localStorageService: LocalStorageService) { }
 
-  private isClosed = new BehaviorSubject<boolean>(
-    this.localStorageService.getItem("isClosed") === 'true'
-  );
+  private isClosed = new BehaviorSubject<boolean>(this.getState());
 
   menu: any = [
     {
@@ -35,6 +33,13 @@ export class SidebarService {
     //   url: "/news"
     // },
   ]
+
+  getState() {
+    if (this.localStorageService.getItem("isClosed") === null) {
+      this.localStorageService.setItem("isClosed", 'true');
+    }
+    return this.localStorageService.getItem("isClosed") === 'true'
+  }
 
   getIsClosed() {
     return this.isClosed.asObservable();
