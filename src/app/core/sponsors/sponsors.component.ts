@@ -11,7 +11,7 @@ export class SponsorsComponent {
     'assets/sponsors/diamond/Antibiotice.webp',
     'assets/sponsors/diamond/Asociatia Umanitara Tester Grup.webp',
     'assets/sponsors/diamond/Deus.webp',
-    'assets/sponsors/diamond/Heaven Solutions.webp',
+    // 'assets/sponsors/diamond/Heaven Solutions.webp',
     'assets/sponsors/diamond/Trans AnaPet.webp',
     'assets/sponsors/diamond/WinMentor Logo.webp',
   ]
@@ -24,5 +24,7 @@ export class SponsorsComponent {
     'assets/sponsors/standard/AviTop.webp',
     'assets/sponsors/standard/meg.webp',
     'assets/sponsors/standard/pro.webp',
+    'assets/sponsors/standard/conti.webp',
+    'assets/sponsors/standard/volti.webp',
   ]
 }

@@ -7,6 +7,11 @@ h1 {
   }
 }
 
+section {
+  display: grid;
+  gap: 1rem;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -22,7 +27,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 0rem;
+  margin: 0;
   text-align: center;
   padding: .5rem;
   border: 7px solid var(--primary-color);
@@ -32,7 +37,7 @@ h2 {
 }
 
 .sponsor {
-  width: calc(33.3% - 1rem);
+  width: calc(20% - 1rem);
   background-color: var(--surface-color);
   border-radius: 1rem;
   border-radius: .5rem;
@@ -48,6 +53,12 @@ h2 {
   }
 }
 
+.sponsor.heaven {
+  width: calc(30% - 1rem);
+  @media only screen and (max-width : 768px) {
+    width: 100%!important;
+  }
+}
 
 .diamond h2 {
   text-align: center;
@@ -57,7 +68,7 @@ h2 {
 
 .standard {
   .sponsor {
-    width: calc(25% - 1rem);
+    width: calc(20% - 1rem);
     background-color: var(--wash);
   }
   h2 {

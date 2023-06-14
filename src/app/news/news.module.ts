@@ -6,6 +6,8 @@ import { NewsEditorComponent } from './news-editor/news-editor.component';
 import { NewsItemComponent } from './news-list/news-item/news-item.component';
 import { TextEditorComponent } from './news-editor/text-editor/text-editor.component';
 import { MenuComponent } from './news-editor/menu/menu.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,11 @@ import { MenuComponent } from './news-editor/menu/menu.component';
     NewsEditorComponent,
     NewsItemComponent,
     TextEditorComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild([
       { path: '', component: NewsListComponent },
       { path: 'new', component: NewsEditorComponent, data: { mode: 'new' } },

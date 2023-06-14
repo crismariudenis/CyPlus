@@ -1,12 +1,13 @@
-<h1>Bla bla bla</h1>
-
-<form>
-  <input placeholder="Title" class="title-input">
-  <input placeholder="Image Url">
-  <section>
-    <app-menu></app-menu>
-    <app-text-editor [text]="text"></app-text-editor>
-  </section>
-  <button class="save-btn">Save</button>
-</form>
+<ng-container>
+  <h1>Bla bla bla</h1>
+  <form #form="ngForm">
+    <input placeholder="Title" class="title-input">
+    <input placeholder="Image Url">
+    <section>
+      <app-menu></app-menu>
+      <app-text-editor></app-text-editor>
+    </section>
+    <button type="submit" (click)="onSubmitForm()" class="save-btn">Save</button>
+  </form>
+</ng-container>
 
