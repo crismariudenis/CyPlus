@@ -81,19 +81,13 @@ export class MenuComponent {
     this.textEditor.classList.toggle('code-view')
   }
 
-  // onAddImage() {
-  //   const filesDialog = this.dialog.open(FilesDialogComponent, {
-  //     panelClass : 'files-dialog',
-  //     autoFocus: false,
-  //     data : {
-  //       selectedImages : [],
-  //       multipleSelect : false
-  //     }
-  //   })
-  //   filesDialog.afterClosed().subscribe((data : FilesDialogData) => {
-  //     if (data.selectedImages.length == 1) this.editImage(data.selectedImages[0].imageUrl)
-  //   })
-  // }
+  onAddImage() {
+    let imageUrl = prompt('Image URL')
+    this.format(
+      "insertHTML",
+      `<img width="100%" src='${imageUrl}'>`
+    )
+  }
 
   // editImage(image : any) {
   //   const imageEditorDialog = this.dialog.open(ImageEditorDialogComponent, {

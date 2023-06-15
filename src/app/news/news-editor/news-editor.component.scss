@@ -11,12 +11,24 @@ input {
   border-bottom: 1px solid var(--wash);
 }
 
+a {
+  display: flex;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
 .title-input {
   border-radius: 1rem 1rem 0 0;
 }
 
-.save-btn {
-  float: right;
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
   margin-top: .8rem;
   outline: none;
   padding: .8rem 1.6rem;

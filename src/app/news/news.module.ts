@@ -8,6 +8,8 @@ import { TextEditorComponent } from './news-editor/text-editor/text-editor.compo
 import { MenuComponent } from './news-editor/menu/menu.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { PreviewTextPipe } from '../core/services/preview-text.pipe';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     NewsItemComponent,
     TextEditorComponent,
     MenuComponent,
+    PreviewTextPipe,
   ],
   imports: [
+    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forChild([
@@ -28,6 +32,6 @@ import { ReactiveFormsModule } from '@angular/forms';
       { path: ':id/edit', component: NewsEditorComponent },
       { path: '**', redirectTo: ''}
     ])
-  ]
+  ],
 })
 export class NewsModule { }

@@ -12,6 +12,6 @@
     border-radius: 0 0 1rem 1rem;
     &:empty:before {
         content: attr(placeholder);
-        color: var(--placeholder-color);
+        color: #666;
     }
 }

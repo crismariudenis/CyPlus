@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Route, Router } from '@angular/router';
+import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { Observable, map, of, switchMap, tap } from 'rxjs';
+import { NewsService } from 'src/app/core/services/news.service';
 
 @Component({
   selector: 'app-news-editor',
@@ -9,26 +11,51 @@ import { Route, Router } from '@angular/router';
 })
 export class NewsEditorComponent implements OnInit {
 
-  constructor(private fb: FormBuilder, private router: Router) { }
+  constructor(private route : ActivatedRoute, private router: Router, private newsService: NewsService) { }
+
+  article$! : Observable<any>
 
   ngOnInit(): void {
-    console.log(this.router);
+    this.security()
+    this.newsService.init()
+    if (this.route.snapshot.data['mode'] != 'new') {
+      this.article$ = this.route.params.pipe(
+        switchMap((params : Params) => {
+          return this.newsService.getNewsItem(params['id'])
+        })
+      )
+    }
+    else {
+      this.article$ = of({
+        id: 'new',
+        title : '',
+        imageUrl : '',
+        text : ''
+      })
+    }
   }
 
 
-  form: FormGroup = this.fb.group({
-    title: ['', Validators.required],
-    imageUrl: ['', Validators.required],
-    text: ['', Validators.required]
-  });
-
-
-  onSubmitForm() {
-    console.log(this.form);
-    if (this.form.valid) {
-      console.log(this.form.value);
+  async onSubmitForm(article: any) {
+    if (article.id == 'new') {
+      article.id = Date.now().toString()
+      await this.newsService.addNewNews(article)
     } else {
-      alert('Please fill in all fields.');
+      this.newsService.updateNews(article)
+    }
+    this.router.navigate(['/news', article.id])
+  }
+
+  async onDelete(article: any) {
+    if (confirm('Are you sure you want to delete this article?')) {
+      await this.newsService.deleteNews(article.id)
+      this.router.navigate(['/news'])
+    }
+  }
+
+  security() {
+    if (prompt('Enter password') != 'mag') {
+      this.router.navigate(['/news'])
     }
   }
 }

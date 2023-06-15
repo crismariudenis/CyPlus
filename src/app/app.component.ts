@@ -1,7 +1,5 @@
-import { Location, PopStateEvent } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, NavigationStart, Router } from '@angular/router';
-import { debounce, debounceTime } from 'rxjs';
+import { NewsService } from './core/services/news.service';
 
 @Component({
   selector: 'app-root',
@@ -10,14 +8,9 @@ import { debounce, debounceTime } from 'rxjs';
 })
 export class AppComponent implements OnInit {
 
-  private lastPoppedUrl: any;
-  private yScrollStack: any = [];
-
-  constructor(private router: Router, private location: Location) { }
+  constructor(private newsService: NewsService) { }
 
   ngOnInit() {
-    this.router.events.pipe(debounceTime(100)).subscribe((ev:any) => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    })
+    this.newsService.init()
   }
 }

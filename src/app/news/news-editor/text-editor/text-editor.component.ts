@@ -5,7 +5,7 @@ import { timer } from 'rxjs';
 @Component({
   selector: 'app-text-editor',
   templateUrl: './text-editor.component.html',
-  styleUrls: ['./text-editor.component.scss']
+  styleUrls: ['./text-editor.component.scss'],
 })
 export class TextEditorComponent implements OnInit {
 

@@ -1,1 +1,6 @@
-<p>news-details works!</p>
+<ng-container *ngIf="news$ | async as news">
+  <a routerLink="/news">< back</a>
+  <h1>{{ news.title }}</h1>
+  <img [src]="news.imageUrl">
+  <div class="text" [innerHTML]="news.text"></div>
+</ng-container>
