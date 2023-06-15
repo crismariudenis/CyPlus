@@ -7,5 +7,6 @@ export const environment = {
     messagingSenderId: "862375305108",
     appId: "1:862375305108:web:4d7d751498c9145faa7981",
     databaseURL: 'tps://cyplus-91226-default-rtdb.europe-west1.firebasedatabase.app'
-  }
+  },
+  password : 'mag'
 }

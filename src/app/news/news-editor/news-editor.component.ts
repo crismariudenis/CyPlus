@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Observable, map, of, switchMap, tap } from 'rxjs';
 import { NewsService } from 'src/app/core/services/news.service';
+import { environment } from 'src/environment';
 
 @Component({
   selector: 'app-news-editor',
@@ -54,7 +55,7 @@ export class NewsEditorComponent implements OnInit {
   }
 
   security() {
-    if (prompt('Enter password') != 'mag') {
+    if (prompt('Enter password') != environment.password) {
       this.router.navigate(['/news'])
     }
   }
