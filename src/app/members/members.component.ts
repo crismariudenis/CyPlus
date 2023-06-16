@@ -27,20 +27,20 @@ export class MembersComponent {
       mentor: true
     },
     {
-      name: "Amalia Țîlică",
-      imageUrl: "/assets/members/Amalia Tilica.webp",
-      quote: "There's no way I have a screw loose, because they all fell out (and then I used zipties).",
-      instagram: "https://www.instagram.com/espurr.23/",
-      facebook: 'https://www.facebook.com/amaliatilica',
-      mentor: true
-    },
-    {
       name: "Denis Crismariu",
       imageUrl: "/assets/members/Denis.webp",
       quote: "L + L = W",
       instagram: "https://www.instagram.com/crismariudenis/",
       facebook: "https://www.facebook.com/crismariu.denis",
       github: "https://github.com/crismariudenis",
+      mentor: true
+    },
+    {
+      name: "Amalia Țîlică",
+      imageUrl: "/assets/members/Amalia Tilica.webp",
+      quote: "There's no way I have a screw loose, because they all fell out (and then I used zipties).",
+      instagram: "https://www.instagram.com/espurr.23/",
+      facebook: 'https://www.facebook.com/amaliatilica',
       mentor: true
     },
     {
