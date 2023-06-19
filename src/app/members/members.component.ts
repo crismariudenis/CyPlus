@@ -10,12 +10,26 @@ export class MembersComponent {
 
   team: Array<member> = [
     {
+      name: "Mirela Țibu",
+      imageUrl: "/assets/members/Mirela Tibu.webp",
+      mentor: true
+    },
+    {
       name: "Puricoi Constantin-Cătălin",
       imageUrl: "/assets/members/catalin.webp",
       quote: `"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill`,
       instagram: "https://www.instagram.com/catalinpuricoi/",
       facebook: "https://www.facebook.com/catalin.puricoi",
       github: "https://github.com/catalinpuricoi15",
+      mentor: true
+    },
+    {
+      name: "Denis Crismariu",
+      imageUrl: "/assets/members/Denis.webp",
+      quote: "Just bring the robot outside!",
+      instagram: "https://www.instagram.com/crismariudenis/",
+      facebook: "https://www.facebook.com/crismariu.denis",
+      github: "https://github.com/crismariudenis",
       mentor: true
     },
     {
@@ -27,25 +41,11 @@ export class MembersComponent {
       mentor: true
     },
     {
-      name: "Denis Crismariu",
-      imageUrl: "/assets/members/Denis.webp",
-      quote: "L + L = W",
-      instagram: "https://www.instagram.com/crismariudenis/",
-      facebook: "https://www.facebook.com/crismariu.denis",
-      github: "https://github.com/crismariudenis",
-      mentor: true
-    },
-    {
       name: "Amalia Țîlică",
       imageUrl: "/assets/members/Amalia Tilica.webp",
       quote: "There's no way I have a screw loose, because they all fell out (and then I used zipties).",
       instagram: "https://www.instagram.com/espurr.23/",
       facebook: 'https://www.facebook.com/amaliatilica',
-      mentor: true
-    },
-    {
-      name: "Mirela Țibu",
-      imageUrl: "/assets/members/Mirela Tibu.webp",
       mentor: true
     },
     {
@@ -75,7 +75,7 @@ export class MembersComponent {
     {
       name: "Sebastian Tănase",
       imageUrl: "/assets/members/Sebastian Tanase.webp",
-      quote: "W",
+      quote: "Simple is better",
       instagram: "https://www.instagram.com/sebastian.f3d/"
     },
     {
