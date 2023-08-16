@@ -11,9 +11,9 @@ export class SponsorsComponent {
     'assets/sponsors/diamond/Antibiotice.webp',
     'assets/sponsors/diamond/Asociatia Umanitara Tester Grup.webp',
     'assets/sponsors/diamond/Deus.webp',
-    // 'assets/sponsors/diamond/Heaven Solutions.webp',
     'assets/sponsors/diamond/Trans AnaPet.webp',
     'assets/sponsors/diamond/WinMentor Logo.webp',
+    'assets/sponsors/diamond/EduZone.png'
   ]
 
   platinum : any = []
@@ -26,5 +26,6 @@ export class SponsorsComponent {
     'assets/sponsors/standard/pro.webp',
     'assets/sponsors/standard/conti.webp',
     'assets/sponsors/standard/volti.webp',
+    'assets/sponsors/standard/Certus.png'
   ]
 }
