@@ -37,7 +37,7 @@ h2 {
 }
 
 .sponsor {
-  width: calc(16% - 1rem);
+  width: calc(20% - 1rem);
   background-color: var(--surface-color);
   border-radius: 1rem;
   border-radius: .5rem;
@@ -64,6 +64,19 @@ h2 {
   text-align: center;
   color: var(--primary-color);
   animation: diamond 1s infinite linear;
+}
+
+.premium {
+  h2 {
+    border-color: gold;
+  }
+  .sponsor {
+    width: calc(19% - 1rem);
+    background-color: var(--wash);
+    img {
+      aspect-ratio: 6/4;
+    }
+  }
 }
 
 .standard {

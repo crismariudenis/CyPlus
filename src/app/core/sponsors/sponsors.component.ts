@@ -13,10 +13,12 @@ export class SponsorsComponent {
     'assets/sponsors/diamond/Deus.webp',
     'assets/sponsors/diamond/Trans AnaPet.webp',
     'assets/sponsors/diamond/WinMentor Logo.webp',
-    'assets/sponsors/diamond/EduZone.png'
+    
   ]
 
-  platinum : any = []
+  premium : any = [
+    'assets/sponsors/diamond/EduZone.png'
+  ]
 
   gold : any = []
 
