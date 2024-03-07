@@ -1,18 +1,36 @@
-<span class="mentor" *ngIf="member.mentor">mentor</span>
-<span class="team-lead" *ngIf="member.teamLeader">team lead</span>
-<img class="member-img" [src]="member.imageUrl">
+<span class="mentor" *ngIf="member.mentor">Mentor</span>
+<span class="team-lead" *ngIf="member.teamLeader">{{ member.role }}</span>
+<span class="member" *ngIf="member.role == 'Member'">Member</span>
+<span class="volunteer" *ngIf="member.role == 'Volunteer'">Volunteer</span>
+
+<img class="member-img" [src]="member.imageUrl" />
 <section class="member-data">
-    <span class="name">{{ member.name }}</span>
-    <p class="quote" *ngIf="member.quote">{{ member.quote }}</p>
-    <section class="social">
-        <a [href]="member.facebook" target="_blank" class="social__link hoverable" *ngIf="member.facebook">
-            <img src="/assets/social/facebook.webp">
-        </a>
-        <a [href]="member.github" target="_blank" class="social__link hoverable" *ngIf="member.github">
-            <img src="/assets/social/github.webp">
-        </a>
-        <a [href]="member.instagram" target="_blank" class="social__link hoverable" *ngIf="member.instagram">
-            <img src="/assets/social/instagram.webp">
-        </a>
-    </section>
+  <span class="name">{{ member.name }}</span>
+  <p class="quote" *ngIf="member.quote">{{ member.quote }}</p>
+  <section class="social">
+    <a
+      [href]="member.facebook"
+      target="_blank"
+      class="social__link hoverable"
+      *ngIf="member.facebook"
+    >
+      <img src="/assets/social/facebook.webp" />
+    </a>
+    <a
+      [href]="member.github"
+      target="_blank"
+      class="social__link hoverable"
+      *ngIf="member.github"
+    >
+      <img src="/assets/social/github.webp" />
+    </a>
+    <a
+      [href]="member.instagram"
+      target="_blank"
+      class="social__link hoverable"
+      *ngIf="member.instagram"
+    >
+      <img src="/assets/social/instagram.webp" />
+    </a>
+  </section>
 </section>

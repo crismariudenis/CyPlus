@@ -3,31 +3,21 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-sponsors',
   templateUrl: './sponsors.component.html',
-  styleUrls: ['./sponsors.component.scss']
+  styleUrls: ['./sponsors.component.scss'],
 })
 export class SponsorsComponent {
-
-  diamond : any = [
-    'assets/sponsors/diamond/Antibiotice.webp',
-    'assets/sponsors/diamond/Asociatia Umanitara Tester Grup.webp',
-    'assets/sponsors/diamond/Deus.webp',
-    'assets/sponsors/diamond/Trans AnaPet.webp',
+  diamond: any = [
+    'assets/sponsors/diamond/Cenit.webp',
+    'assets/sponsors/diamond/Tester-Grup.webp',
     'assets/sponsors/diamond/WinMentor Logo.webp',
-    
-  ]
+    'assets/sponsors/diamond/EduZone.png',
+    'assets/sponsors/diamond/FabLab Iasi.png',
+    'assets/sponsors/diamond/Tipo Taida și Asociația grupate.png'
+  ];
 
-  premium : any = [
-    'assets/sponsors/diamond/EduZone.png'
-  ]
+  premium: any = [];
 
-  gold : any = []
+  gold: any = [];
 
-  standard : any = [
-    'assets/sponsors/standard/AviTop.webp',
-    'assets/sponsors/standard/meg.webp',
-    'assets/sponsors/standard/pro.webp',
-    'assets/sponsors/standard/conti.webp',
-    'assets/sponsors/standard/volti.webp',
-    'assets/sponsors/standard/Certus.png'
-  ]
+  standard: any = [];
 }
