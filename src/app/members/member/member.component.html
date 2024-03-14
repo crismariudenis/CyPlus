@@ -1,6 +1,8 @@
 <span class="mentor" *ngIf="member.mentor">Mentor</span>
 <span class="team-lead" *ngIf="member.teamLeader">{{ member.role }}</span>
-<span class="member" *ngIf="member.role == 'Member'">Member</span>
+<span class="member" *ngIf="member.role == 'Member' || member.role == 'Boboc'"
+  >{{member.role}}</span
+>
 <span class="volunteer" *ngIf="member.role == 'Volunteer'">Volunteer</span>
 
 <img class="member-img" [src]="member.imageUrl" />

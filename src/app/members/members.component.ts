@@ -16,7 +16,7 @@ export class MembersComponent {
     {
       name: 'Denis Crismariu',
       imageUrl: '/assets/members/Denis Crismariu.jpg',
-      quote: 'Just bring the robot outside!',
+      quote: 'I need sleep!',
       instagram: 'https://www.instagram.com/crismariudenis/',
       facebook: 'https://www.facebook.com/crismariu.denis',
       github: 'https://github.com/crismariudenis',
@@ -24,7 +24,7 @@ export class MembersComponent {
     },
     {
       name: 'Alexandru Radu',
-      imageUrl: '/assets/members/Alex Radu.jpg',
+      imageUrl: '/assets/members/Alex Radu.webp',
       quote: 'Born to be a SolidWorker',
       instagram: 'https://www.instagram.com/alexandru230/',
       github: 'https://github.com/alexradu04',
@@ -41,7 +41,7 @@ export class MembersComponent {
     },
     {
       name: 'Aabhas Jain',
-      imageUrl: '/assets/members/Aabhas.jpg',
+      imageUrl: '/assets/members/Aabhas.webp',
       quote: 'Did you record it?',
       mentor: true,
     },
@@ -66,14 +66,14 @@ export class MembersComponent {
     {
       name: 'Sebastian Tănase',
       imageUrl: '/assets/members/Tanase Sebastian.jpg',
-      quote: 'Simple is better',
+      quote: '🤌',
       instagram: 'https://www.instagram.com/sebastian.f3d/',
       teamLeader: true,
       role: 'Technical Leader',
     },
     {
       name: 'Buruiana Ștefan',
-      imageUrl: '/assets/members/Buruiana Stefan.jpg',
+      imageUrl: '/assets/members/Buruiana Stefan.webp',
       quote: 'The game we play was not compatible with love',
       github: 'https://github.com/Titoxyk',
       teamLeader: true,
@@ -91,8 +91,8 @@ export class MembersComponent {
     },
     {
       name: 'Dragos Babusanu',
-      imageUrl: '/assets/members/Babusanu Dragos.jpg',
-      quote: '',
+      imageUrl: '/assets/members/Babusanu Dragos.webp',
+      quote: 'Dai si mie o gurita?',
       role: 'Member',
     },
     {
@@ -106,7 +106,7 @@ export class MembersComponent {
       imageUrl: '/assets/members/Pachitanu Matei.jpg',
       quote: '',
       github: '',
-      role: 'Member',
+      role: 'Boboc',
     },
     {
       name: 'Victor Tcaciuc',
@@ -118,7 +118,7 @@ export class MembersComponent {
     },
     {
       name: 'Andrei Balasescu',
-      imageUrl: '/assets/members/Balasescu Andrei.jpg',
+      imageUrl: '/assets/members/Balasescu Andrei.webp',
       quote: 'We win these',
       instagram: 'https://www.instagram.com/bala_andrei9/',
       role: 'Member',
