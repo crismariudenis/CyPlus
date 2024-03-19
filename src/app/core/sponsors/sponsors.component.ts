@@ -12,7 +12,8 @@ export class SponsorsComponent {
     'assets/sponsors/diamond/WinMentor Logo.webp',
     'assets/sponsors/diamond/EduZone.png',
     'assets/sponsors/diamond/FabLab Iasi.png',
-    'assets/sponsors/diamond/Tipo Taida și Asociația grupate.png'
+    'assets/sponsors/diamond/TipoTaida.png',
+    'assets/sponsors/diamond/Asociatia LIIS.png',
   ];
 
   premium: any = [];
