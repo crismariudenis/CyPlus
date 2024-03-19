@@ -71,11 +71,11 @@
 .mentor,
 .team-lead,
 .member,
-.volunteer, {
+.volunteer {
   font-size: 0.9rem;
   font-weight: bold;
   position: absolute;
-  color: var(--surface-color);
+  color: rgb(253, 244, 244);
   top: 0.5rem;
   right: 0.5rem;
   padding: 0.2rem 0.5rem;
@@ -98,7 +98,7 @@ team-lead .mentor .member .volunteer {
   background-color: rgb(53, 182, 53);
 }
 .mentor {
-  background-color: rgb(20, 20, 156);
+  background-color: rgb(48, 48, 161);
 }
 .volunteer {
   background-color: yellow;
