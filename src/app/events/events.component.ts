@@ -8,6 +8,26 @@ import { Component } from '@angular/core';
 export class EventsComponent {
   events = [
     {
+      name: 'CyLiis at the League Tournament',
+      date: '8-10.03.2024',
+      imageUrl: '/assets/events/Regionals.png',
+      link: 'https://www.instagram.com/p/C4a70dMonu3/?img_index=1',
+    },
+
+    {
+      name: 'CyLiis WorldWide Alliance',
+      date: '',
+      imageUrl: '/assets/events/WordWide.jpg',
+      link: 'https://www.instagram.com/p/C4naN9SNZaG/',
+    },
+    {
+      name: '3D Design Workshop',
+      date: '16-17.03.2024',
+      imageUrl: '/assets/events/3dWorkshop.jpg',
+      link: 'https://www.instagram.com/p/C4dK3hgo2FI/',
+    },
+
+    {
       name: 'Robotics & AI STEMposium',
       date: '03.03.2024',
       imageUrl: '/assets/events/AC.webp',
