@@ -106,7 +106,7 @@ export class MembersComponent {
       imageUrl: '/assets/members/Pachitanu Matei.jpg',
       quote: '',
       github: '',
-      role: 'Boboc',
+      role: 'Member',
     },
     {
       name: 'Victor Tcaciuc',
