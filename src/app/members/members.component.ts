@@ -163,6 +163,11 @@ export class MembersComponent {
       quote: '',
       role: 'Member',
     },
+    {
+      name: 'Cezara Ioana',
+      imageUrl: '/assets/members/cezara.jpg',
+      role: 'Member'
+    }
     // {
     //   name: 'Anna Spac',
     //   imageUrl: '',
