@@ -1,0 +1,176 @@
+.event-detail {
+  padding: 40px;
+  background-color: #121212;
+  color: #fff;
+}
+
+.event-detail h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+.event-title {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.event-detail h2:before,
+.event-detail h2:after {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.event-detail h2:before {
+  left: 10px;
+}
+
+.event-detail h2:after {
+  right: 10px;
+}
+
+.event-detail .event-date {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.event-detail .event-detail-image {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.event-detail .event-location,
+.event-detail .event-structure,
+.event-detail .event-demo,
+.event-detail .event-conferences,
+.event-detail .event-exhibition,
+.event-detail .event-objectives,
+.event-detail .event-schedule {
+  margin: 30px 0;
+  text-align: left;
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid #333;
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
+}
+
+.event-detail .event-location:hover,
+.event-detail .event-structure:hover,
+.event-detail .event-demo:hover,
+.event-detail .event-conferences:hover,
+.event-detail .event-exhibition:hover,
+.event-detail .event-objectives:hover,
+.event-detail .event-schedule:hover {
+  transform: scale(1.02);
+  background-color: #1e1e1e;
+}
+
+.event-detail h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.event-detail ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-detail ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.event-detail table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+.event-detail table thead {
+  background-color: #333;
+}
+
+.event-detail table th {
+  font-size: 1.1rem;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.event-detail table td {
+  font-size: 1rem;
+  padding: 10px;
+  color: #ccc;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.event-detail table tr:last-child td {
+  border-bottom: none;
+}
+
+.event-detail table tr:hover {
+  background-color: #1e1e1e;
+  transition: background-color 0.3s ease;
+}
+
+.event-detail .event-schedule {
+  overflow-x: auto;
+}
+
+.event-detail .event-schedule table {
+  min-width: 600px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .event-detail .event-location,
+  .event-detail .event-structure,
+  .event-detail .event-demo,
+  .event-detail .event-conferences,
+  .event-detail .event-exhibition,
+  .event-detail .event-objectives,
+  .event-detail .event-schedule {
+    padding: 15px;
+  }
+
+  .event-detail h2 {
+    font-size: 1.8rem;
+  }
+
+  .event-detail h3 {
+    font-size: 1.3rem;
+  }
+
+  .event-detail ul li {
+    font-size: 1rem;
+  }
+
+  .event-detail table th,
+  .event-detail table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .event-detail .event-detail-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}

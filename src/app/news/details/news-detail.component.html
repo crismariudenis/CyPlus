@@ -1,0 +1,79 @@
+<div *ngIf="eventDetails" class="event-detail">
+    <h2 class="event-title">{{ eventDetails.title }}</h2>
+  
+  <div class="event-location">
+    <h3>Locatie:</h3>
+    <p>Conferințe: <strong>{{ eventDetails.location.conferences }}</strong></p>
+    <p>Demo: <strong>{{ eventDetails.location.demo }}</strong></p>
+  </div>
+
+  <div class="event-structure">
+    <h3>Structura evenimentului:</h3>
+    <ul>
+      <li *ngFor="let item of eventDetails.structure">{{ item }}</li>
+    </ul>
+  </div>
+
+  <div class="event-demo">
+    <h3>Demo FTC</h3>
+    <p><strong>Invitați:</strong></p>
+    <ul>
+      <li *ngFor="let invite of eventDetails.demo.invites">{{ invite }}</li>
+    </ul>
+    <p><strong>Format:</strong></p>
+    <ul>
+      <li *ngFor="let format of eventDetails.demo.format">{{ format }}</li>
+    </ul>
+  </div>
+
+  <div class="event-conferences">
+    <h3>Conferințe STEM</h3>
+    <p><strong>Invitați:</strong></p>
+    <ul>
+      <li *ngFor="let invite of eventDetails.conferences.invites">{{ invite }}</li>
+    </ul>
+    <p><strong>Format:</strong></p>
+    <ul>
+      <li *ngFor="let format of eventDetails.conferences.format">{{ format }}</li>
+    </ul>
+  </div>
+
+  <div class="event-exhibition">
+    <h3>Expoziția de proiecte</h3>
+    <p><strong>Invitați:</strong></p>
+    <ul>
+      <li *ngFor="let invite of eventDetails.exhibition.invites">{{ invite }}</li>
+    </ul>
+  </div>
+
+  <div class="event-objectives">
+    <h3>Obiectivele proiectului</h3>
+    <ul>
+      <li *ngFor="let objective of eventDetails.objectives">{{ objective }}</li>
+    </ul>
+  </div>
+
+  <div class="event-schedule">
+    <h3>Program:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Ora</th>
+          <th>Demo</th>
+          <th>Ora</th>
+          <th>Conferințe</th>
+          <th>Teme de discuție</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let schedule of eventDetails.schedule">
+          <td>{{ schedule.time1 }}</td>
+          <td>{{ schedule.demo }}</td>
+          <td>{{ schedule.time2 }}</td>
+          <td>{{ schedule.conference }}</td>
+          <td>{{ schedule.topic }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

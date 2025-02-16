@@ -1,59 +1,83 @@
 :host {
   display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 100%;
-  background-color: var(--surface-color);
-  margin: 2rem 0;
-  border-radius: 1rem;
+  // background-color: var(--surface-color);
   padding: 2rem;
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    margin: 1rem 0;
-    padding: 1.4rem;
-  }
+  border-radius: 1rem;
 }
 
-.brand {
-  &__title {
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin: 0;
-  }
-  &__text {
-    font-size: 1.1rem;
-    line-height: 1.4;
-  }
-  @media only screen and (max-width: 768px) {
-    &__title {
-      font-size: 2rem;
-    }
-    &__text {
-      font-size: 0.8rem;
-    }
-  }
-}
-
-.social {
+.contact__info {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+.contact__title {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.contact__info h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.contact__icon-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.contact__icon-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.contact__icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); /* White icons on dark background */
+}
+
+.social__links {
+  display: flex;
+  justify-content: center;
   gap: 1rem;
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0.7rem;
-    height: 40px;
-    width: 40px;
-    background-color: var(--wash);
-    border-radius: 50%;
-    img {
-      width: 100%;
-      height: 100%;
-      filter: invert(1);
-    }
-    &:hover {
-      background-color: var(--primary-color);
-    }
-  }
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--text-color);
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--wash);
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social__link:hover {
+  background-color: var(--primary-color);
+}
+
+.social__link img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
 }

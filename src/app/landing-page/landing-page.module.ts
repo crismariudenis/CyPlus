@@ -5,21 +5,18 @@ import { HeroComponent } from './hero/hero.component';
 import { RouterModule } from '@angular/router';
 import { SliderComponent } from './slider/slider.component';
 import { DescriptionComponent } from './description/description.component';
-import { MtiComponent } from './mti/mti.component';
-
+import { NewsSectionComponent } from '../news/news.component';
 @NgModule({
   declarations: [
     LandingPageComponent,
     HeroComponent,
     SliderComponent,
     DescriptionComponent,
-    MtiComponent
+    NewsSectionComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild([
-      { path: '', component: LandingPageComponent }
-    ])
-  ]
+    RouterModule.forChild([{ path: '', component: LandingPageComponent }]),
+  ],
 })
-export class LandingPageModule { }
+export class LandingPageModule {}
