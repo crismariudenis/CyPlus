@@ -27,11 +27,11 @@ export class SidebarService {
       iconUrl: "/assets/icons/portfolio.webp",
       url: "/members"
     },
-    {
-      name: "News",
-      iconUrl: "/assets/icons/info.webp",
-      url: "/news"
-    },
+    // {
+    //   name: "News",
+    //   iconUrl: "/assets/icons/info.webp",
+    //   url: "/news"
+    // },
   ]
 
   getState() {

@@ -3,14 +3,15 @@
     flex-direction: column;
 }
 
+
 main {
     display: flex;
     box-sizing: border-box;
     margin-top: var(--header-height);
     width: 100%;
-    gap: 2rem;
+    // gap: 2rem;
     @media only screen and (max-width : 768px) {
-        gap: 1rem;
+        // gap: 1rem;
     }
 }
 

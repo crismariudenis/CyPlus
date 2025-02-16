@@ -9,6 +9,8 @@ import { SidebarService } from '../services/sidebar.service';
 export class SidebarComponent {
   constructor(private sidebarService: SidebarService) {}
 
+
+  
   isClosed$ = this.sidebarService.getIsClosed();
   currentYear: number = new Date().getFullYear();
   menu = this.sidebarService.menu;

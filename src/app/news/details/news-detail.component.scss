@@ -1,28 +1,33 @@
 .event-detail {
-  padding: 40px;
-  background-color: #121212;
+  padding: 20px; /* Reduced padding */
+  // background-color: #121212;
   color: #fff;
+  margin: 0 auto;
+  max-width: 100%;
+
 }
 
 .event-detail h2 {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.8rem; /* Smaller font size */
+  margin-bottom: 15px; /* Reduced margin */
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
 }
+
 .event-title {
   color: var(--primary-color);
-  font-size: 3.2rem;
+  font-size: 2.5rem; /* Smaller font size */
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem; /* Reduced margin */
 }
+
 .event-detail h2:before,
 .event-detail h2:after {
   position: absolute;
-  font-size: 3rem;
+  font-size: 2.5rem; /* Smaller font size */
   top: 50%;
   transform: translateY(-50%);
   color: #888;
@@ -37,16 +42,16 @@
 }
 
 .event-detail .event-date {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Smaller font size */
   color: #bbb;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced margin */
   text-align: center;
 }
 
 .event-detail .event-detail-image {
-  width: 80%;
-  max-width: 800px;
-  margin: 20px auto;
+  width: 60%; /* Smaller image */
+  max-width: 600px; /* Smaller max-width */
+  margin: 15px auto; /* Reduced margin */
   display: block;
   border-radius: 10px;
 }
@@ -55,12 +60,11 @@
 .event-detail .event-structure,
 .event-detail .event-demo,
 .event-detail .event-conferences,
-.event-detail .event-exhibition,
 .event-detail .event-objectives,
 .event-detail .event-schedule {
-  margin: 30px 0;
+  margin: 20px auto; /* Reduced margin */
   text-align: left;
-  padding: 20px;
+  padding: 15px; /* Reduced padding */
   background-color: transparent;
   border: 1px solid #333;
   transition: transform 0.2s ease-in-out, background-color 0.2s;
@@ -70,7 +74,6 @@
 .event-detail .event-structure:hover,
 .event-detail .event-demo:hover,
 .event-detail .event-conferences:hover,
-.event-detail .event-exhibition:hover,
 .event-detail .event-objectives:hover,
 .event-detail .event-schedule:hover {
   transform: scale(1.02);
@@ -78,8 +81,8 @@
 }
 
 .event-detail h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 1.3rem; /* Smaller font size */
+  margin-bottom: 10px; /* Reduced margin */
   color: #ffffff;
   font-weight: bold;
 }
@@ -91,15 +94,15 @@
 }
 
 .event-detail ul li {
-  font-size: 1.1rem;
-  margin: 10px 0;
+  font-size: 1rem; /* Smaller font size */
+  margin: 8px 0; /* Reduced margin */
   color: #ccc;
 }
 
 .event-detail table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 15px; /* Reduced margin */
   background-color: transparent;
 }
 
@@ -108,15 +111,15 @@
 }
 
 .event-detail table th {
-  font-size: 1.1rem;
-  padding: 15px;
+  font-size: 1rem; /* Smaller font size */
+  padding: 10px; /* Reduced padding */
   color: #ffffff;
   text-align: center;
 }
 
 .event-detail table td {
-  font-size: 1rem;
-  padding: 10px;
+  font-size: 0.9rem; /* Smaller font size */
+  padding: 8px; /* Reduced padding */
   color: #ccc;
   text-align: center;
   border-bottom: 1px solid #444;
@@ -136,41 +139,75 @@
 }
 
 .event-detail .event-schedule table {
-  min-width: 600px;
+  min-width: 500px; /* Smaller min-width */
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* Desktop Styles (applies only to screens wider than 768px) */
+@media (min-width: 769px) {
+  .event-detail {
+    max-width: 80%; /* Apply max-width only on desktop */
+  }
+
   .event-detail .event-location,
   .event-detail .event-structure,
   .event-detail .event-demo,
   .event-detail .event-conferences,
-  .event-detail .event-exhibition,
   .event-detail .event-objectives,
   .event-detail .event-schedule {
-    padding: 15px;
+    max-width: 80%; /* Apply max-width only on desktop */
+  }
+}
+
+/* Mobile Responsive (applies only to screens 768px or smaller) */
+@media (max-width: 768px) {
+  .event-detail {
+    padding: 15px; /* Reduced padding for mobile */
+    max-width: 100%; /* Full width on mobile */
   }
 
   .event-detail h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .event-title {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .event-detail .event-date {
+    font-size: 0.8rem; /* Smaller font size for mobile */
+  }
+
+  .event-detail .event-detail-image {
+    width: 80%; /* Larger image for mobile */
+    max-width: 100%; /* Full width for mobile */
+  }
+
+  .event-detail .event-location,
+  .event-detail .event-structure,
+  .event-detail .event-demo,
+  .event-detail .event-conferences,
+  .event-detail .event-objectives,
+  .event-detail .event-schedule {
+    margin: 15px 0; /* Reduced margin for mobile */
+    padding: 10px; /* Reduced padding for mobile */
+    max-width: 100%; /* Full width on mobile */
   }
 
   .event-detail h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem; /* Smaller font size for mobile */
   }
 
   .event-detail ul li {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Smaller font size for mobile */
   }
 
   .event-detail table th,
   .event-detail table td {
-    font-size: 0.9rem;
-    padding: 8px;
+    font-size: 0.8rem; /* Smaller font size for mobile */
+    padding: 6px; /* Reduced padding for mobile */
   }
 
-  .event-detail .event-detail-image {
-    width: 100%;
-    max-width: 100%;
+  .event-detail .event-schedule table {
+    min-width: 100%; /* Full width for mobile */
   }
 }

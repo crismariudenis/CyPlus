@@ -15,24 +15,7 @@ interface NewsItem {
   styleUrls: ['./news-detail.component.scss'],
 })
 export class NewsDetailComponent implements OnInit {
-  newsItem: NewsItem | undefined;
 
-  newsData: NewsItem[] = [
-    {
-      id: 1,
-      title: 'Maryland Tech Invitational 2024',
-      date: 'June 29-30, 2024',
-      content: 'Detailed description about the Maryland Tech Invitational...',
-      imageUrl: 'assets/maryland-tech.jpg',
-    },
-    {
-      id: 2,
-      title: 'First Tech Challenge World Championship in Houston',
-      date: 'April 17-20, 2024',
-      content: 'Detailed information about the Houston World Championship...',
-      imageUrl: 'assets/houston-championship.jpg',
-    },
-  ];
   eventDetails = {
     title: 'STEMSPIRE',
     date: '22-23 februarie',
@@ -44,7 +27,6 @@ export class NewsDetailComponent implements OnInit {
     structure: [
       'Demonstrație practică (Demo), organizată conform programului BRD FIRST Tech Challenge România (FTC)',
       'Conferințe STEM',
-      'Expoziție de proiecte inovative în inginerie - ambele zile',
     ],
     demo: {
       invites: ['15 echipe FTC din toată țara'],
@@ -74,83 +56,92 @@ export class NewsDetailComponent implements OnInit {
       'Crearea unei experiențe interactive: Organizarea unui demo de robotică în care echipele FTC din România să participe.',
       'Strângerea de fonduri: pentru a deschide copiilor accesul la tehnologii avansate și inovație.',
     ],
-    schedule: [
+    demoSchedule: [
       {
-        time1: '8:00-9:30',
-        demo: 'Check-in',
-        time2: '11:00-11:40',
-        conference: 'Sesiunea 1',
+        time: '8:00-9:30',
+        activity: 'Check-in',
+      },
+      {
+        time: '9:30-10:30',
+        activity: 'Inspecții',
+      },
+      {
+        time: '10:30-10:45',
+        activity: 'Ceremonia de deschidere',
+      },
+      {
+        time: '10:45-11:00',
+        activity: 'Drivers and coaches meeting',
+      },
+      {
+        time: '11:00-13:00',
+        activity: 'Meciuri de calificare',
+      },
+      {
+        time: '13:00-14:00',
+        activity: 'Pauză de masă',
+      },
+      {
+        time: '14:00-16:00',
+        activity: 'Meciuri de calificare',
+      },
+      {
+        time: '16:00-16:15',
+        activity: 'Pauză',
+      },
+      {
+        time: '16:15-16:30',
+        activity: 'Selecția alianțelor',
+      },
+      {
+        time: '16:30-18:00',
+        activity: 'Semifinale și finale',
+      },
+      {
+        time: '18:00-18:30',
+        activity: 'Ceremonia de premiere și închidere',
+      },
+    ],
+    conferenceSchedule: [
+      {
+        time: '11:00-11:40',
+        activity: 'Sesiunea 1',
         topic: '',
       },
       {
-        time1: '9:30-10:30',
-        demo: 'Inspecții',
-        time2: '11:40-12:20',
-        conference: 'Catrinel Zaharia',
+        time: '11:40-12:20',
+        activity: 'Catrinel Zaharia',
         topic: '',
       },
       {
-        time1: '10:30-10:45',
-        demo: 'Ceremonia de deschidere',
-        time2: '12:20-12:30',
-        conference: 'pauza',
+        time: '12:20-12:30',
+        activity: 'Pauză',
         topic: '',
       },
       {
-        time1: '10:45-11:00',
-        demo: 'Drivers and coaches meeting',
-        time2: '12:30-13:10',
-        conference: 'Dan Zaharia',
+        time: '12:30-13:10',
+        activity: 'Dan Zaharia',
         topic: 'Meseriile viitorului/Jobs of Tomorrow',
       },
       {
-        time1: '11:00-13:00',
-        demo: 'Meciuri de calificare',
-        time2: '13:10-13:50',
-        conference: 'Tudor Tarta',
-        topic: 'Dincolo de frica incepe aventura',
+        time: '13:10-13:50',
+        activity: 'Tudor Tarta',
+        topic: 'Dincolo de frică începe aventura',
       },
       {
-        time1: '13:00-14:00',
-        demo: 'Pauză de masă',
-        time2: '13:50-14:00',
-        conference: 'pauza',
+        time: '13:50-14:00',
+        activity: 'Pauză',
         topic: '',
       },
       {
-        time1: '14:00-16:00',
-        demo: 'Meciuri de calificare',
-        time2: '14:00-14:40',
-        conference: 'Sesiunea 5',
+        time: '14:00-14:40',
+        activity: 'Sesiunea 5',
         topic: '',
       },
       {
-        time1: '16:00-16:15',
-        demo: 'Pauză',
-        time2: '14:40-15:20',
-        conference: 'Ioan Doroftei',
+        time: '14:40-15:20',
+        activity: 'Ioan Doroftei',
         topic: 'Ioan Doroftei',
-      },
-      {
-        time1: '16:15-16:30',
-        demo: 'Selecția alianțelor',
-        time2: '',
-        conference: '',
-        topic: '',
-      },
-      {
-        time1: '16:30-18:00',
-        demo: 'Semifinale și finale',
-        time2: '',
-        conference: '',
-        topic: '',
-      },
-      {
-        time1: '18:00-18:30',
-        demo: 'Ceremonia de premiere și închidere',
-        time2: '',
-        conference: '',
-        topic: '',
       },
     ],
   };
@@ -159,6 +150,5 @@ export class NewsDetailComponent implements OnInit {
 
   ngOnInit() {
     const newsId = Number(this.route.snapshot.paramMap.get('id'));
-    this.newsItem = this.newsData.find((news) => news.id === newsId);
   }
 }

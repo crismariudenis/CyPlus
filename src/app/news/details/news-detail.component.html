@@ -1,10 +1,14 @@
 <div *ngIf="eventDetails" class="event-detail">
-    <h2 class="event-title">{{ eventDetails.title }}</h2>
-  
+  <h2 class="event-title">{{ eventDetails.title }}</h2>
+
   <div class="event-location">
     <h3>Locatie:</h3>
-    <p>Conferințe: <strong>{{ eventDetails.location.conferences }}</strong></p>
-    <p>Demo: <strong>{{ eventDetails.location.demo }}</strong></p>
+    <p>
+      Conferințe: <strong>{{ eventDetails.location.conferences }}</strong>
+    </p>
+    <p>
+      Demo: <strong>{{ eventDetails.location.demo }}</strong>
+    </p>
   </div>
 
   <div class="event-structure">
@@ -13,7 +17,6 @@
       <li *ngFor="let item of eventDetails.structure">{{ item }}</li>
     </ul>
   </div>
-
   <div class="event-demo">
     <h3>Demo FTC</h3>
     <p><strong>Invitați:</strong></p>
@@ -25,55 +28,63 @@
       <li *ngFor="let format of eventDetails.demo.format">{{ format }}</li>
     </ul>
   </div>
+  <div class="event-schedule">
+    <h3>Demo Schedule</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of eventDetails.demoSchedule">
+          <td>{{ item.time }}</td>
+          <td>{{ item.activity }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <div class="event-conferences">
     <h3>Conferințe STEM</h3>
     <p><strong>Invitați:</strong></p>
     <ul>
-      <li *ngFor="let invite of eventDetails.conferences.invites">{{ invite }}</li>
+      <li *ngFor="let invite of eventDetails.conferences.invites">
+        {{ invite }}
+      </li>
     </ul>
     <p><strong>Format:</strong></p>
     <ul>
-      <li *ngFor="let format of eventDetails.conferences.format">{{ format }}</li>
+      <li *ngFor="let format of eventDetails.conferences.format">
+        {{ format }}
+      </li>
     </ul>
   </div>
 
-  <div class="event-exhibition">
-    <h3>Expoziția de proiecte</h3>
-    <p><strong>Invitați:</strong></p>
-    <ul>
-      <li *ngFor="let invite of eventDetails.exhibition.invites">{{ invite }}</li>
-    </ul>
+  <div class="event-schedule">
+    <h3>Conferințe Schedule</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+          <th>Topic</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of eventDetails.conferenceSchedule">
+          <td>{{ item.time }}</td>
+          <td>{{ item.activity }}</td>
+          <td>{{ item.topic }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
   <div class="event-objectives">
     <h3>Obiectivele proiectului</h3>
     <ul>
       <li *ngFor="let objective of eventDetails.objectives">{{ objective }}</li>
     </ul>
-  </div>
-
-  <div class="event-schedule">
-    <h3>Program:</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Ora</th>
-          <th>Demo</th>
-          <th>Ora</th>
-          <th>Conferințe</th>
-          <th>Teme de discuție</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let schedule of eventDetails.schedule">
-          <td>{{ schedule.time1 }}</td>
-          <td>{{ schedule.demo }}</td>
-          <td>{{ schedule.time2 }}</td>
-          <td>{{ schedule.conference }}</td>
-          <td>{{ schedule.topic }}</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </div>
