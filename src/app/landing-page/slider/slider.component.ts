@@ -9,13 +9,13 @@ import { BehaviorSubject, Observable, Subscription, interval, map } from 'rxjs';
 })
 export class SliderComponent implements OnInit {
   slider: string[] = [
-    'assets/slider/1.webp',
-    'assets/slider/2.webp',
-    'assets/slider/4.webp',
-    'assets/slider/5.webp',
-    'assets/slider/6.webp',
-    'assets/slider/3.webp',
-    'assets/slider/7.webp',
+    'assets/slider/team.jpg',
+    // 'assets/slider/2.webp',
+    // 'assets/slider/4.webp',
+    // 'assets/slider/5.webp',
+    // 'assets/slider/6.webp',
+    // 'assets/slider/3.webp',
+    // 'assets/slider/7.webp',
   ];
 
   imageIndex$: BehaviorSubject<number> = new BehaviorSubject<number>(0);
