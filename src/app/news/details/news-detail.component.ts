@@ -54,7 +54,6 @@ export class NewsDetailComponent implements OnInit {
     objectives: [
       'Promovarea domeniilor STEM: Inspirarea tinerilor prin povești de succes, sesiuni educaționale și demonstrații de tehnologie.',
       'Crearea unei experiențe interactive: Organizarea unui demo de robotică în care echipele FTC din România să participe.',
-      'Strângerea de fonduri: pentru a deschide copiilor accesul la tehnologii avansate și inovație.',
     ],
     demoSchedule: [
       {
