@@ -2,7 +2,7 @@
   <h2 class="event-title">{{ eventDetails.title }}</h2>
 
   <div class="event-location">
-    <h3>Locatie:</h3>
+    <h3>Locație:</h3>
     <p>
       Conferințe: <strong>{{ eventDetails.location.conferences }}</strong>
     </p>
@@ -68,14 +68,14 @@
       <thead>
         <tr>
           <th>Time</th>
-          <th>Activity</th>
+          <th>Speaker</th>
           <th>Topic</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let item of eventDetails.conferenceSchedule">
           <td>{{ item.time }}</td>
-          <td>{{ item.activity }}</td>
+          <td>{{ item.speaker }}</td>
           <td>{{ item.topic }}</td>
         </tr>
       </tbody>

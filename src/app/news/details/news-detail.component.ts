@@ -15,7 +15,6 @@ interface NewsItem {
   styleUrls: ['./news-detail.component.scss'],
 })
 export class NewsDetailComponent implements OnInit {
-
   eventDetails = {
     title: 'STEMSPIRE',
     date: '22-23 februarie',
@@ -57,90 +56,86 @@ export class NewsDetailComponent implements OnInit {
     ],
     demoSchedule: [
       {
-        time: '8:00-9:30',
+        time: '9:00-9:30',
         activity: 'Check-in',
       },
       {
-        time: '9:30-10:30',
+        time: '9:30-11:00',
         activity: 'Inspecții',
       },
       {
-        time: '10:30-10:45',
+        time: '11:00-11:15',
         activity: 'Ceremonia de deschidere',
       },
       {
-        time: '10:45-11:00',
+        time: '11:15-11:30',
         activity: 'Drivers and coaches meeting',
       },
       {
-        time: '11:00-13:00',
+        time: '11:30-13:30',
         activity: 'Meciuri de calificare',
       },
       {
-        time: '13:00-14:00',
+        time: '13:30-14:30',
         activity: 'Pauză de masă',
       },
       {
-        time: '14:00-16:00',
+        time: '14:30-16:30',
         activity: 'Meciuri de calificare',
       },
       {
-        time: '16:00-16:15',
-        activity: 'Pauză',
-      },
-      {
-        time: '16:15-16:30',
+        time: '16:45-17:00',
         activity: 'Selecția alianțelor',
       },
       {
-        time: '16:30-18:00',
+        time: '17:00-18:30',
         activity: 'Semifinale și finale',
       },
       {
-        time: '18:00-18:30',
+        time: '18:30-19:00',
         activity: 'Ceremonia de premiere și închidere',
       },
     ],
     conferenceSchedule: [
       {
         time: '11:00-11:40',
-        activity: 'Sesiunea 1',
-        topic: '',
+        speaker: 'Daniel Rusu',
+        topic: 'Educația: practică sau teoretică',
       },
       {
         time: '11:40-12:20',
-        activity: 'Catrinel Zaharia',
-        topic: '',
+        speaker: 'Catrinel Zaharia',
+        topic: 'Budget Time - relația ta cu banii și tehnologia',
       },
       {
         time: '12:20-12:30',
-        activity: 'Pauză',
+        speaker: 'Pauză',
         topic: '',
       },
       {
         time: '12:30-13:10',
-        activity: 'Dan Zaharia',
-        topic: 'Meseriile viitorului/Jobs of Tomorrow',
+        speaker: 'Dan Zaharia',
+        topic: 'Meseriile viitorului',
       },
       {
         time: '13:10-13:50',
-        activity: 'Tudor Tarta',
+        speaker: 'Tudor Tarta',
         topic: 'Dincolo de frică începe aventura',
       },
       {
         time: '13:50-14:00',
-        activity: 'Pauză',
+        speaker: 'Pauză',
         topic: '',
       },
       {
         time: '14:00-14:40',
-        activity: 'Sesiunea 5',
-        topic: '',
+        speaker: 'CyLiis',
+        topic: 'Robotul CyLiis',
       },
       {
         time: '14:40-15:20',
-        activity: 'Ioan Doroftei',
-        topic: 'Ioan Doroftei',
+        speaker: 'Ioan Doroftei',
+        topic: 'Robotică socială',
       },
     ],
   };
