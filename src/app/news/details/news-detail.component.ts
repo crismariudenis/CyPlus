@@ -21,7 +21,7 @@ export class NewsDetailComponent implements OnInit {
     imageUrl: '../../../assets/events/BTC.webp',
     location: {
       conferences: 'Palatul Braunstein (22 februarie)',
-      demo: 'Restaurant Moldova (23 februarie)',
+      demo: 'Iullius Mall, parter, langa Starbucks (23 februarie)',
     },
     structure: [
       'Demonstrație meciuri robotică, organizată conform programului BRD FIRST Tech Challenge România (FTC)',
