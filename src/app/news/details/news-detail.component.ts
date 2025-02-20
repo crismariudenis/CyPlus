@@ -24,7 +24,7 @@ export class NewsDetailComponent implements OnInit {
       demo: 'Restaurant Moldova (23 februarie)',
     },
     structure: [
-      'Demonstrație practică (Demo), organizată conform programului BRD FIRST Tech Challenge România (FTC)',
+      'Demonstrație meciuri robotică, organizată conform programului BRD FIRST Tech Challenge România (FTC)',
       'Conferințe STEM',
     ],
     demo: {
@@ -52,55 +52,27 @@ export class NewsDetailComponent implements OnInit {
     },
     objectives: [
       'Promovarea domeniilor STEM: Inspirarea tinerilor prin povești de succes, sesiuni educaționale și demonstrații de tehnologie.',
-      'Crearea unei experiențe interactive: Organizarea unui demo de robotică în care echipele FTC din România să participe.',
+      'Crearea unei experiențe interactive: Organizarea unor meciuri demonstrative de robotică în care echipele FTC din România să participe.',
     ],
     demoSchedule: [
       {
-        time: '9:00-9:30',
-        activity: 'Check-in',
+        time: '12:00-15:00',
+        activity: 'Meciuri demonstrative',
       },
       {
-        time: '9:30-11:00',
-        activity: 'Inspecții',
-      },
-      {
-        time: '11:00-11:15',
-        activity: 'Ceremonia de deschidere',
-      },
-      {
-        time: '11:15-11:30',
-        activity: 'Drivers and coaches meeting',
-      },
-      {
-        time: '11:30-13:30',
-        activity: 'Meciuri de calificare',
-      },
-      {
-        time: '13:30-14:30',
+        time: '15:00-16:00',
         activity: 'Pauză de masă',
       },
       {
-        time: '14:30-16:30',
-        activity: 'Meciuri de calificare',
-      },
-      {
-        time: '16:45-17:00',
-        activity: 'Selecția alianțelor',
-      },
-      {
-        time: '17:00-18:30',
-        activity: 'Semifinale și finale',
-      },
-      {
-        time: '18:30-19:00',
-        activity: 'Ceremonia de premiere și închidere',
+        time: '16:00-19:00',
+        activity: 'Meciuri demonstrative',
       },
     ],
     conferenceSchedule: [
       {
         time: '11:00-11:40',
         speaker: 'Daniel Rusu',
-        topic: 'Educația: practică sau teoretică',
+        topic: 'Educația: practică sau teoretică?',
       },
       {
         time: '11:40-12:20',
